@@ -67,7 +67,7 @@ form.addEventListener("submit", (e) => {
     console.log(userValue);
 
     async function weatherapi(city) {
-        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=b04de2aa459744a98de160935250703&q=${city}&aqi=no`)
+        let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=b04de2aa459744a98de160935250703&q=${city}&aqi=no`)
         let res = await response.json()
         console.log(res);
         degreeCent.innerHTML = `
