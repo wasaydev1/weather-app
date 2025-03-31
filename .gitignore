@@ -1,0 +1,1 @@
+-e "# Ignore system & VS Code files\n.vscode/\nAppData/\n*.log" 

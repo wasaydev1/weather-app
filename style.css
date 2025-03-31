@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./sea-6326812_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#main-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main-container .left {
+    height: 100%;
+    width: 75%;
+    color: snow;
+}
+
+#main-container .left .recent-wheater>p {
+    font-size: 24px;
+    font-family: poppins;
+}
+
+#main-container .left .recent-wheater>p span {
+    padding-inline: 5px;
+    background: linear-gradient(to bottom, white, #b7bdbe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main-container .left .recent-wheater {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    height: 100%;
+    padding: 40px;
+}
+
+#main-container .left .recent-wheater .heavy-rain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#main-container .left .recent-wheater .heavy-rain .line {
+    height: 1px;
+    width: 100%;
+    background: snow;
+}
+
+#main-container .left .recent-wheater .heavy-rain>p {
+    font-size: 100px;
+    text-align: end;
+    background: linear-gradient(to bottom, white, #8E9D9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: poppins;
+}
+
+#main-container .left .recent-wheater .wheather {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container .left .recent-wheater .wheather #box .wheather-line {
+    width: 80%;
+    height: 2px;
+    background: #8E9D9F;
+    margin-bottom: 5px;
+}
+
+#main-container .left .recent-wheater .wheather #box {
+    background: rgba(255, 250, 250, 0.116);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 20px;
+    gap: 5px;
+    font-size: 20px;
+    font-family: poppins;
+}
+
+#main-container .left .recent-wheater .wheather #box i {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 250, 250, 0.192);
+}
+
+#main-container .right {
+    height: 100%;
+    width: 25%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+/* right */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.right form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.right form i {
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, grey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right form #input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 80px 10px 35px;
+    background: rgba(255, 255, 255, 0.097);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px grey;
+}
+.right form #submit{
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0px;
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px grey;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: poppins;
+}
+#submit{
+    width: 80px;
+    transition: width 0.5s ease;
+}
+.right form #submit:hover{
+    width: 100%;
+}
+
+.right form input:focus {
+    background: rgba(255, 255, 255, 0.233);
+}
+
+.right #degreeCent {
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right #degreeCent h1 {
+    font-size: 80px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.right #degreeCent .wind {
+    display: flex;
+    gap: 10px;
+}
+
+.humidity {
+    display: flex;
+    gap: 10px;
+}
+
+.humidity i {
+    font-size: 24px;
+    color: #b7bdbe;
+}
+
+.humidity p {
+    font-size: 20px;
+    color: #8E9D9F;
+}
+
+.right #degreeCent .wind i {
+    font-size: 24px;
+    color: #b7bdbe;
+}
+
+.right #degreeCent .wind p {
+    font-size: 20px;
+    color: #8E9D9F;
+}
+
+.right #degreeCent .wind-line {
+    height: 1px;
+    width: 150%;
+    background: #8E9D9F;
+}
+
+.information {
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: snow;
+
+}
+
+.information .one {
+    font-size: 20px;
+    color: #8E9D9F;
+    display: flex;
+    gap: 10px;
+}
+
+.information .one i {
+    color: #b7bdbe;
+}
+
+#backgroundImage button{
+    box-shadow: 2px 2px 2px #8E9D9F;
+    cursor: pointer;
+    margin: 20px;
+    color: snow;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.213);
+    font-family: poppins;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: absolute;
+}
