@@ -16,9 +16,9 @@ let degreeCent = document.getElementById("degreeCent")
 let recent_wheater = document.getElementById("recent-wheater")
 
 
-async function weatherapi(city) {
+async function defaultApi(city) {
     let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=b04de2aa459744a98de160935250703&q=${city}&aqi=no`)
-    let res = await response.json()
+    let res = await defaultApi.json()
     console.log(res);
     degreeCent.innerHTML = `
     <h1>${res.current.temp_c}°C</h1>
@@ -55,7 +55,7 @@ async function weatherapi(city) {
 </div>
             `
 }
-weatherapi("karachi")
+defaultApi("karachi")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
