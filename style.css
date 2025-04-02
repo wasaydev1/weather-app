@@ -11,7 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
 }
@@ -297,7 +297,10 @@ body {
     }
     
     .right p {
-        color: #c1c7c8 !important;
+        color: #d3d9da !important;
+    }
+    .right i {
+        color: #d3d9da !important;
     }
 
     .left {
