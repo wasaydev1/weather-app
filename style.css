@@ -152,7 +152,8 @@ body {
     border-radius: 15px;
     box-shadow: 2px 2px 2px grey;
 }
-.right form #submit{
+
+.right form #submit {
     outline: none;
     border: none;
     position: absolute;
@@ -166,11 +167,13 @@ body {
     font-weight: 600;
     font-family: poppins;
 }
-#submit{
+
+#submit {
     width: 80px;
     transition: width 0.5s ease;
 }
-.right form #submit:hover{
+
+.right form #submit:hover {
     width: 100%;
 }
 
@@ -250,7 +253,7 @@ body {
     color: #b7bdbe;
 }
 
-#backgroundImage button{
+#backgroundImage button {
     box-shadow: 2px 2px 2px #8E9D9F;
     cursor: pointer;
     margin: 20px;
@@ -263,4 +266,69 @@ body {
     border-radius: 10px;
     padding: 10px 30px;
     position: absolute;
+}
+
+@media screen and (max-width:1200px) {
+    .wheather {
+        flex-wrap: wrap;
+    }
+
+    .right #submit {
+        width: 40%;
+    }
+
+    .right #form #input::placeholder {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #main-container {
+        flex-direction: column;
+        padding: 0px !important;
+        overflow: auto;
+        height: 100%;
+    }
+    .right {
+        width: 100% !important;
+        overflow: hidden;
+        order: -1 !important;
+        min-height:120vh !important;
+    }
+    
+    .right p {
+        color: #c1c7c8 !important;
+    }
+
+    .left {
+        width: 100% !important;
+    }
+    .left .heavy-rain > p{
+        font-size: 70px !important;
+    }
+    #backgroundImage{
+        height: 70px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px #8E9D9F;
+        position: relative;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+    .left .wheather{
+        height: 60% !important;
+        overflow: auto;
+    }
+    #backgroundImage button{
+        border-radius: 0%;
+        position: absolute;
+        padding: 0px !important;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
